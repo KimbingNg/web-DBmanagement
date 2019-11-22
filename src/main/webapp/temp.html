@@ -1,0 +1,350 @@
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<style>-->
+    <!--html {-->
+        <!--background: url("file:///home/ngkimbing/Pictures/linux.jpg") no-repeat;-->
+        <!--background-size: cover;-->
+    <!--}-->
+
+    <!--body {-->
+        <!--font-family: Serif, "Kaiti", "Times New Roman", Georgia;-->
+    <!--}-->
+
+    <!--h1 {-->
+        <!--text-align: center;-->
+        <!--color: blue;-->
+        <!--font-size: 400%;-->
+    <!--}-->
+
+    <!--.tab {-->
+        <!--width: 100%;-->
+        <!--text-align: center;-->
+        <!--cursor: pointer;-->
+    <!--}-->
+
+    <!--.tab_list ul {-->
+        <!--display: flex;-->
+        <!--margin: 0 auto;-->
+        <!--padding: 0;-->
+    <!--}-->
+
+    <!--.tab li {-->
+        <!--list-style: none;-->
+        <!--line-height: 50px;-->
+        <!--flex: auto;-->
+    <!--}-->
+
+    <!--.tab_list .active {-->
+        <!--background-color: red;-->
+        <!--color: #ffffff;-->
+        <!--border-radius: 15px;-->
+    <!--}-->
+
+    <!--.database-item {-->
+        <!--font-size: 24px;-->
+        <!--font-family: 'SansSerif';-->
+        <!--left: 50%;-->
+        <!--padding: 10px 0 0 25%;-->
+    <!--}-->
+
+    <!--.database-item input {-->
+        <!--font-size: inherit;-->
+        <!--font-family: inherit;-->
+    <!--}-->
+
+    <!--.main_panel {-->
+        <!--width: 900px;-->
+        <!--height: 350px;-->
+        <!--text-align: center;-->
+        <!--background-color: rgba(248, 248, 255, 0.68);-->
+        <!--border-radius: 15px;-->
+        <!--margin: 0 auto;-->
+
+    <!--}-->
+
+    <!--.mid {-->
+        <!--margin: 0 auto;-->
+        <!--position: relative;-->
+        <!--width: 1000px;-->
+
+    <!--}-->
+
+    <!--.database-item .item {-->
+        <!--height: 30px;-->
+        <!--line-height: 30px;-->
+        <!--margin-bottom: 16px;-->
+        <!--float: left;-->
+    <!--}-->
+
+    <!--.txt_label {-->
+        <!--display: inline-block;-->
+        <!--width: 100px;-->
+        <!--padding: 3px 6px;-->
+        <!--text-align: right;-->
+        <!--float: left;-->
+    <!--}-->
+
+    <!--.input_wrap {-->
+        <!--margin-left: 16px;-->
+        <!--float: left;-->
+    <!--}-->
+
+    <!--.error-code {-->
+        <!--color: red;-->
+        <!--font-size: 15px;-->
+        <!--text-align: left;-->
+        <!--padding: 0 15px;-->
+        <!--float: left;-->
+    <!--}-->
+<!--</style>-->
+<!--<script src="/home/ngkimbing/Desktop/jquery-3.4.1.js">-->
+    <!--var currentPage = 0;-->
+<!--</script>-->
+
+
+<!--<link href="/css/githubstyle.css" rel="stylesheet">-->
+<!--<title>Database Operation System</title>-->
+<!--<body>-->
+<!--<div class="mid">-->
+    <!--<h1>Database Operation System</h1>-->
+    <!--<div id="database_info" style="color: white; text-align: center">-->
+        <!--link:<input type="text"/> port: <input type="text"> database: <input type="text">-->
+        <!--<br/><br/><br/><br/>-->
+    <!--</div>-->
+
+    <!--<div class="main_panel">-->
+        <!--<div class="tab">-->
+            <!--<div class="tab_list">-->
+                <!--<ul>-->
+                    <!--<li class="active">Person</li>-->
+                    <!--<li>User</li>-->
+                <!--</ul>-->
+            <!--</div>-->
+            <!--　　　　　-->
+        <!--</div>-->
+        <!--&lt;!&ndash;person 部分&ndash;&gt;-->
+        <!--<div class="database-item" id="person_tab">-->
+            <!--<form id="personForm" method="post">-->
+                <!--<div class="input_table_list">-->
+                    <!--<div class="item clearfix">-->
+                        <!--<label class="txt_label">UserName:</label>-->
+                        <!--<span class="input_wrap"><input id="person_in_username" class="user_input" name="username"-->
+                                                        <!--autocomplete="off"></span>-->
+                        <!--<div class="error-code" id="username_error" style="display:block">-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="item clearfix">-->
+                        <!--<label class="txt_label">name:</label>-->
+                        <!--<span class="input_wrap"><input id="person_in_name" class="user_input" name="name"-->
+                                                        <!--autocomplete="off"></span>-->
+                        <!--<div class="error-code" id="name_error" style="display:block">-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="item clearfix">-->
+                        <!--<label class="txt_label">age:</label>-->
+                        <!--<span class="input_wrap"><input id="person_in_age" class="user_input" name="age"-->
+                                                        <!--autocomplete="off"></span>-->
+                        <!--<div class="error-code" id="age_error" style="display:block">-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="item clearfix">-->
+                        <!--<label class="txt_label">telenum:</label>-->
+                        <!--<span class="input_wrap"><input id="person_in_telenum" class="user_input" name="telenum"-->
+                                                        <!--autocomplete="off"></span>-->
+                        <!--<div class="error-code" id="telenum_error" style="display:block">-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="item" style="padding:3% 25%">-->
+                        <!--<span class="input_wrap"><input id='person_insert_btn' type="button" value="insert"/></span>-->
+                        <!--<span class="input_wrap"><input id='person_remove_btn' type="button" value="remove"/></span>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</form>-->
+        <!--</div>-->
+
+        <!--&lt;!&ndash;user 部分&ndash;&gt;-->
+        <!--<div class="database-item" id="user_tab" style="display: none">-->
+            <!--<form id="userForm" method="post">-->
+                <!--<div class="item clearfix">-->
+                    <!--<label class="txt_label">UserName:</label>-->
+                    <!--<span class="input_wrap"><input id="in_user_username" class="user_input" name="username"-->
+                                                    <!--autocomplete="off"/></span>-->
+                    <!--<div class="error-code" id="user_username_error" style="display:block">-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="item clearfix">-->
+                    <!--<label class="txt_label">password:</label>-->
+                    <!--<span class="input_wrap"><input id="in_user_password" class="user_input" name="password"-->
+                                                    <!--autocomplete="off"/></span>-->
+                    <!--<div class="error-code" id="user_password_error" style="display:block">-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="item clearfix">-->
+                    <!--<label class="txt_label">age:</label>-->
+                    <!--<span class="input_wrap"><input id="in_user_age" class="user_input" name="age"-->
+                                                    <!--autocomplete="off"/></span>-->
+                    <!--<div class="error-code" id="user_age_error" style="display:block">-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="item clearfix">-->
+                    <!--<label class="txt_label">gender:</label>-->
+                    <!--<span class="input_wrap"><input id="in_user_gender" class="user_input" name="gender"-->
+                                                    <!--autocomplete="off"/></span>-->
+                    <!--<div class="error-code" id="user_gender_error" style="display:block">-->
+                    <!--</div>-->
+                <!--</div>-->
+
+
+                <!--<div class="item" style="padding:3% 25%">-->
+                    <!--<span class="input_wrap"><input id='user_insert_btn' type="button" value="insert"/></span>-->
+                    <!--<span class="input_wrap"><input id='user_remove_btn' type="button" value="remove"/></span>-->
+                <!--</div>-->
+
+            <!--</form>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<!--</body>-->
+<!--<script type="text/javascript">-->
+    <!--// tab control-->
+    <!--var tab = document.querySelector('.tab');-->
+    <!--var lis = tab.querySelectorAll('li');-->
+    <!--var items = document.querySelectorAll('.database-item');-->
+    <!--for (var i = 0; i < lis.length; ++i) {-->
+        <!--lis[i].setAttribute('index', i);-->
+        <!--lis[i].onclick = function () {-->
+            <!--for (var i = 0; i < lis.length; ++i) {-->
+                <!--lis[i].className = '';-->
+                <!--items[i].style.display = 'none';-->
+                <!--console.log('set lis and item ' + i)-->
+            <!--}-->
+            <!--var index = this.getAttribute('index');-->
+            <!--currentPage = index;-->
+            <!--lis[index].className = 'active';-->
+            <!--items[index].style.display = 'block';-->
+            <!--console.log(index);-->
+        <!--}-->
+    <!--}-->
+
+
+    <!--function show(foo) {-->
+        <!--console.log(foo);-->
+        <!--foo.css('display', 'block');-->
+    <!--}-->
+
+    <!--function unshow(foo) {-->
+        <!--foo.css('display', 'none');-->
+    <!--}-->
+
+    <!--function verifyPerson() {-->
+        <!--var userName = $("#person_in_username").val();-->
+        <!--var name = $("#person_in_name").val();-->
+        <!--var age_str = $("#person_in_age").val();-->
+        <!--var telenum = $("#person_in_telenum").val();-->
+        <!--var flag = true;-->
+        <!--var un_maxlen = 10;-->
+        <!--var telregex = /177\d{8}|138\d{8}|136\d{8}/;-->
+        <!--var username_regex = /hnu\.*|HNU\.*/;-->
+
+
+        <!--var curr;-->
+        <!--curr = $("#username_error");-->
+        <!--if (!username_regex.test(userName)) {-->
+            <!--curr.text("User name must start with hnu/HNU");-->
+            <!--show(curr);-->
+            <!--flag = false;-->
+        <!--}-->
+        <!--else if (userName.length > 10) {-->
+            <!--curr.text("The username is too long");-->
+            <!--show(curr);-->
+            <!--flag = false;-->
+        <!--} else {-->
+            <!--unshow(curr);-->
+        <!--}-->
+        <!--curr = $("#name_error");-->
+        <!--if (name.length === 0) {-->
+            <!--curr.text('Name should not be empty');-->
+            <!--curr.show();-->
+            <!--flag = false;-->
+        <!--} else {-->
+            <!--curr.hide();-->
+        <!--}-->
+
+        <!--var age = parseInt(age_str);-->
+        <!--curr = $("#age_error");-->
+        <!--if (age < 0 || age > 150) {-->
+            <!--curr.text("You've entered a wrong age");-->
+            <!--show(curr);-->
+            <!--flag = false;-->
+        <!--} else if (!(/\d{1,3}/.test(age_str))) {-->
+            <!--curr.text('Not a valid age number(0-160)');-->
+            <!--show(curr);-->
+        <!--} else {-->
+            <!--unshow(curr);-->
+        <!--}-->
+
+        <!--curr = $("#telenum_error");-->
+        <!--if (!telregex.test(telenum)) {-->
+            <!--curr.text('Wrong telephone number format');-->
+            <!--show(curr);-->
+            <!--flag = false;-->
+        <!--} else {-->
+            <!--unshow(curr);-->
+        <!--}-->
+        <!--return flag;-->
+    <!--}-->
+
+    <!--function verifyUser() {-->
+
+    <!--}-->
+
+
+    <!--$("#person_insert_btn").click(function () {-->
+        <!--if (!verifyPerson())-->
+            <!--return;-->
+        <!--var userForm = $("#personForm");-->
+        <!--userForm.attr('action', '/person/insert');-->
+        <!--userForm.submit();-->
+        <!--console.log('submitted insert');-->
+    <!--});-->
+    <!--$("#person_remove_btn").click(function () {-->
+        <!--if (!verifyPerson())-->
+            <!--return;-->
+        <!--var userForm = $("#personForm");-->
+        <!--userForm.attr('action', '/person/remove');-->
+        <!--userForm.submit();-->
+        <!--console.log('submitted remove');-->
+    <!--});-->
+
+
+    <!--$("#user_insert_btn").click(function () {-->
+        <!--if (!verifyUser())-->
+            <!--return;-->
+        <!--var userForm = $("#userForm");-->
+        <!--userForm.attr('action', '/user/insert');-->
+        <!--userForm.submit();-->
+        <!--console.log('submitted insert');-->
+    <!--});-->
+    <!--$("#user_remove_btn").click(function () {-->
+        <!--if (!verifyUser())-->
+            <!--return;-->
+        <!--var userForm = $("#userForm");-->
+        <!--userForm.attr('action', '/user/remove');-->
+        <!--userForm.submit();-->
+        <!--console.log('submitted remove');-->
+    <!--});-->
+    <!--$("#person_insert_btn").bind("click", function () {-->
+        <!--$.ajax({-->
+            <!--type: "post",-->
+            <!--url: "default.aspx",-->
+            <!--data: "name=1" ,-->
+            <!--success: function (result) {-->
+                <!--alert(result.msg); //拿到结果-->
+            <!--}-->
+        <!--});-->
+        <!--alert("done");-->
+    <!--});-->
+
+<!--</script>-->
+<!--</html>-->
+

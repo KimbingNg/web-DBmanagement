@@ -1,0 +1,110 @@
+html {
+    background: url("../../../img/linux.jpg") no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+input {
+    border-radius: 10px;
+}
+
+button {
+    border-radius: 10px;
+}
+
+body {
+    font-family: Serif, "Kaiti", "Times New Roman", Georgia;
+}
+
+table {
+    margin: 0 auto;
+    position: relative;
+    width: 80%;
+}
+
+h1 {
+    text-align: center;
+    color: blue;
+    font-size: 400%;
+}
+
+.tab {
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.tab_list ul {
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.tab li {
+    list-style: none;
+    line-height: 50px;
+    flex: auto;
+}
+
+.tab_list .active {
+    background-color: red;
+    color: #ffffff;
+    border-radius: 25px;
+}
+
+.database-item {
+    font-size: 24px;
+    font-family: 'SansSerif';
+    padding: 40px 0 0 80px;
+}
+
+.database-item input {
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.main_panel {
+    width: 760px;
+    /*height: 400px;*/
+    text-align: center;
+    background-color: rgba(248, 248, 255, 0.68);
+    border-radius: 25px;
+    margin: 0 auto;
+    padding-bottom: 5%;
+
+}
+
+.mid {
+    margin: 0 auto;
+    position: relative;
+    width: 1000px;
+
+}
+
+.database-item .item {
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 16px;
+    /*float: left;*/
+}
+
+.txt_label {
+    display: inline-block;
+    width: 100px;
+    padding: 3px 6px;
+    text-align: right;
+    float: left;
+}
+
+.input_wrap {
+    margin-left: 16px;
+    float: left;
+}
+
+.error-code {
+    color: red;
+    font-size: 15px;
+    text-align: left;
+    padding: 0 15px;
+    float: left;
+}
